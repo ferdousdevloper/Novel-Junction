@@ -1,4 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
+
+import contact from "../assets/Images/contact.jpg"
+
+
 const ContactUs = () => {
   return (
     <div className="my-28 lg:container  lg:mx-auto mx-8">
@@ -14,7 +18,7 @@ const ContactUs = () => {
           </div>
           <div className=" rounded-2xl">
             <img
-              src="../../public/contact.jpg"
+              src={contact}
               alt=""
               className="h-52 md:h-96 w-full p-3 rounded-[30px]"
             />
@@ -47,7 +51,7 @@ const ContactUs = () => {
           </div>
           <button
             type="submit"
-            className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-violet-600 dark:text-gray-50"
+            className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-[#23BE0A] dark:text-gray-50"
           >
             Send Message
           </button>

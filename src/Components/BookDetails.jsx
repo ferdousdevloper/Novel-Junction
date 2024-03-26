@@ -36,7 +36,7 @@ const BookDetails = () => {
     setSingleData(singleBookData);
   }, [data, bookId]);
   return (
-    <div className=" border rounded-[30px] my-7 p-5 mt-20">
+    <div className=" border rounded-[30px] my-7 p-5 mt-20 lg:container  lg:mx-auto mx-8">
       <div className=" flex flex-col lg:flex-row gap-8 bg-base-100 items-center rounded-3xl p-5">
         <figure>
           <img

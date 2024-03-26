@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const links = (
@@ -67,7 +67,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="lg:container  lg:mx-auto mx-8">
+    <div className="lg:container  lg:mx-auto mx-8 mt-8">
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -94,9 +94,9 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className=" text-3xl font-bold text-[#131313]">
+          <Link to='/' className=" text-3xl font-bold text-[#131313]">
             Novel <span className="text-[#23BE0A]">Junction</span>
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>

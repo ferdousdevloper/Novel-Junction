@@ -1,15 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
+
+import aboutBg from "../assets/Images/about-bg.jpg"
+
 const AboutUs = () => {
   return (
-    <div className="relative  text-center">
+    <div className="lg:relative  text-center">
       <div>
         <img
-          src="/public/about-bg.jpg"
+          src={aboutBg}
           className="w-full lg:max-h-[calc(100vh-70px)] opacity-50 h-100vh"
           alt=""
         />
       </div>
-      <div className="absolute top-[20%] bottom-[50%]top-0 left-[10%] lg:container  lg:mx-auto mx-8 ">
+      <div className="lg:absolute top-[20%] bottom-[50%]top-0 left-[10%] lg:container  lg:mx-auto mx-8 ">
         <div className="mt-5  ">
           <h1 className="text-black font-playfair font-bold text-6xl">
             ABOUT US
