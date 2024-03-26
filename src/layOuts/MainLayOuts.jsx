@@ -4,7 +4,7 @@ import Navbar from "../Components/Navbar";
 
 const MainLayOuts = () => {
     return (
-        <div className="font-worksans lg:container  lg:mx-auto mx-8">
+        <div className="font-worksans">
             <Navbar></Navbar>
             <Outlet></Outlet>
         </div>

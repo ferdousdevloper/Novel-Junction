@@ -5,7 +5,7 @@ import Books from "../Components/Books";
 
 const Home = () => {
     return (
-        <div>
+        <div className="lg:container  lg:mx-auto mx-8">
             <Banner></Banner>
             <Books></Books>
             

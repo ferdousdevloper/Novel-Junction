@@ -11,7 +11,7 @@ const ListedBooks = () => {
 
 
   return (
-    <div>
+    <div className="lg:container  lg:mx-auto mx-8">
       <div className="text-center my-10 py-24 bg-[#1313130D] rounded-3xl">
         <h1 className="font-playfair text-[#131313] text-5xl font-bold">
           Books

@@ -6,14 +6,14 @@ const Book = ({ book }) => {
   
   const { bookId, bookName, author, image, rating, category, tags } = book || {};
   return (
-    <Link to={`/book-details/${bookId}`}>
+    <Link to={`/book-details/${bookId}`} className="" >
       <div className="">
         <div className=" bg-base-100 shadow-xl p-6 border rounded-3xl ">
           <figure className="mb-6 flex justify-center">
             <img
               src={image}
               alt=""
-              className="rounded-3xl bg-[#F3F3F3] px-10 py-8 max-h-[500px] w-full"
+              className="rounded-3xl bg-[#F3F3F3] px-28 py-8 max-h-[330px] w-auto"
             />
           </figure>
           <div className=" ">

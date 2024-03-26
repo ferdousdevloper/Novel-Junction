@@ -9,11 +9,11 @@ const Books = () => {
         
 
   return (
-    <div>
+    <div className="mb-28">
       <div className="text-center my-24" >
         <h1 className="font-playfair text-[#131313] text-5xl font-bold">Books</h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {
             data.map((book) => <Book key={book.bookId} book={book} ></Book>)
         }

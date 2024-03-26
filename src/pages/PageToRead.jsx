@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import { getBooks } from "../utils/localStorage";
 import PropTypes from 'prop-types';
@@ -16,7 +17,7 @@ const PageToRead = () => {
     setBooks(storedBooks);
   }, []);
 
-  console.log(books);
+  
 
   const data = books;
 
@@ -33,6 +34,7 @@ const PageToRead = () => {
 
   const TriangleBar = (props) => {
     const { fill, x, y, width, height } = props;
+    
 
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
@@ -40,7 +42,7 @@ const PageToRead = () => {
   
 
   return (
-    <div className="mt-20 max-md:overflow-x-scroll lg:flex items-center justify-center ">
+    <div className="mt-20 max-md:overflow-x-scroll lg:flex items-center justify-center lg:container  lg:mx-auto mx-8">
       <BarChart
         width={1500}
         height={600}
@@ -66,7 +68,7 @@ const PageToRead = () => {
 };
 
 PageToRead.propTypes = {
-    TriangleBar: PropTypes.func
+    TriangleBar: PropTypes.object
   };
 
 export default PageToRead;
