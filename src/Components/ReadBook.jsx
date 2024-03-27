@@ -73,7 +73,7 @@ const ReadBook = ({ book }) => {
             <p className="py-3 px-5 text-base text-[#FFAC33] bg-[#FFAC3326] rounded-[30px]">
               Rating: {rating}
             </p>
-            <Link to={`/book-details/${bookId}`} className="py-3 px-5 text-base text-white bg-[#23BE0A] rounded-[30px]">
+            <Link to={`/book-details/${bookId}`} className="btn py-3 px-5 text-base text-white bg-[#23BE0A] rounded-[30px]">
               View Details
             </Link>
           </div>

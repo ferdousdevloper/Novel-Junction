@@ -2,6 +2,7 @@ import { FaUserFriends } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const WishListBook = ({ wishlistBook }) => {
 
@@ -73,7 +74,7 @@ const WishListBook = ({ wishlistBook }) => {
             <p className="py-3 px-5 text-base text-[#FFAC33] bg-[#FFAC3326] rounded-[30px]">
               Rating: {rating}
             </p>
-            <Link to={`/book-details/${bookId}`} className="py-3 px-5 text-base text-white bg-[#23BE0A] rounded-[30px]">
+            <Link to={`/book-details/${bookId}`} className="btn py-3 px-5 text-base text-white bg-[#23BE0A] rounded-[30px]">
               View Details
             </Link>
           </div>
@@ -81,6 +82,12 @@ const WishListBook = ({ wishlistBook }) => {
       </div>
     </div>
     );
+};
+
+WishListBook.propTypes = {
+  wishlistBook: PropTypes.object
+  
+  
 };
 
 export default WishListBook;
