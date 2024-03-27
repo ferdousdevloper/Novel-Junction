@@ -4,6 +4,19 @@ Live site:
 
 - [Novel Junction](https://ferdous-assignment-8.netlify.app/)
 
+Resources:
+
+- [React Router Dom](https://reactrouter.com/en/main)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Daisy UI](https://daisyui.com/)
+- [Prop-Types](https://www.npmjs.com/package/prop-types)
+- [React-Icons](https://react-icons.github.io/react-icons/)
+- [React-Hot-Toast](https://react-hot-toast.com/)
+
+
+
+Features and characteristics of my Novel Junction website:
+
 - Personalized Book Recommendations: Utilize advanced algorithms to offer personalized book recommendations based on user preferences, reading history, and genre interests, enhancing the browsing experience and helping users discover new books tailored to their tastes.
 
 - Vibrant Community Engagement: Foster a thriving community of book lovers through interactive features such as forums, book clubs, and discussion boards, where users can connect, share insights, and participate in literary discussions, creating a dynamic and engaging platform for readers worldwide.
