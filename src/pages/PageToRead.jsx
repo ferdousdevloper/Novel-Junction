@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { getBooks } from "../utils/localStorage";
 import PropTypes from 'prop-types';
 
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts";
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink', '#0088FE', '#00C49F', '#FFBB28'];
 
 const PageToRead = () => {
@@ -52,6 +52,7 @@ const PageToRead = () => {
         <CartesianGrid strokeDasharray="8 2" />
         <XAxis className="text-base" dataKey="bookName" />
         <YAxis  />
+        <Tooltip></Tooltip>
         <Bar
           dataKey="totalPages"
           fill="#8884d8"
