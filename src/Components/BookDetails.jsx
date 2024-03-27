@@ -25,12 +25,11 @@ const BookDetails = () => {
   const { data } = useBooksData();
 
   const handleRead = (book) => {
-    saveBook(book)
-    
-  }
-  const handleWishlist = (wishlistBooks) =>{
-    saveWishlistBook(wishlistBooks)
-  }
+    saveBook(book);
+  };
+  const handleWishlist = (wishlistBooks) => {
+    saveWishlistBook(wishlistBooks);
+  };
   useEffect(() => {
     const singleBookData = data.find((book) => book.bookId == bookId);
     setSingleData(singleBookData);
@@ -58,11 +57,19 @@ const BookDetails = () => {
           <p className="text-[#131313B2] font-semibold text-base leading-[40px]">
             <strong className="text-[#131313]">Review :</strong> {review}
           </p>
-          <div className="flex gap-4 mb-6">
-          {tags?.map(tag => <p key={tag.id} className="py-2 px-4 bg-[#23BE0A0D] text-[#23BE0A] text-base font-semibold rounded-3xl">
-              {tag}
-            </p>)}
-            
+          <div className="flex items-center gap-4 mb-6">
+            <p className="text-[#131313CC] font-bold text-base">
+              <strong>Tag</strong>
+            </p>
+            {tags?.map((tag) => (
+              <p
+                key={tag.id}
+                className="py-2 px-4 bg-[#23BE0A0D] text-[#23BE0A] text-base font-semibold rounded-3xl"
+              >
+                <span>#</span>
+                {tag}
+              </p>
+            ))}
           </div>
           <hr className="my-8" />
           <table className=" text-[#131313B2] font-semibold text-base lg:w-[600px] leading-[40px] my-8">
@@ -84,14 +91,16 @@ const BookDetails = () => {
             </tr>
           </table>
           <div className="card-actions ">
-            <button 
-            onClick={()=> handleRead(singleData)}
-             className="btn border bg-white text-lg font-semibold">
+            <button
+              onClick={() => handleRead(singleData)}
+              className="btn border bg-white text-lg font-semibold"
+            >
               Read
             </button>
             <button
-            onClick={()=> handleWishlist(singleData)}
-             className="btn bg-[#59C6D2] text-white text-lg font-semibold">
+              onClick={() => handleWishlist(singleData)}
+              className="btn bg-[#59C6D2] text-white text-lg font-semibold"
+            >
               Wishlist
             </button>
           </div>
